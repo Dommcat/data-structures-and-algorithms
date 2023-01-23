@@ -1,37 +1,26 @@
 'use strict';
 
+const { filter } = require("domutils");
+const { string } = require("yargs");
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function called addTwo
-that takes in an array and adds two to every value using a for loop.
-Place the new value in a new array.
-Return the new array.
+Write a function called addTwo that takes in an array and adds two to every value using a for loop. Place the new value in a new array. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => {
-  const nums = [];
-  for (let i = 0; i < arr.length; i++) {
-    nums.push(arr[i] + 2);
-
-  }
-
-  console.log(nums)
-  return nums;
-
-
-
   // Solution code here...
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(arr[i] + 2);
+
+  };
+  return newArr;
 };
 
 
-
-
-
-
-
-
-
+// expect(addTwo([1, 2, 4])).toStrictEqual([3, 4, 6]);
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,19 +33,32 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 
 const typeNum = (arr) => {
   // Solution code here...
+  return arr.filter(element => typeof element === 'number');
+
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named containsAnd that, given an array of strings as input, uses filter to return an array containing only strings that contain 'and' within the string.
+Write a function named containsAnd that,
+ given an array of strings as input, uses filter to return an array containing only strings that contain 'and' within the string.
 
 For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
   // Solution code here...
+  let filteredArr = arr.filter(string => string.includes('and'));
+  console.log(filteredArr);
+  return filteredArr;
 };
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -68,19 +70,46 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => {
   // Solution code here...
+  let filteredArr = arr.filter(num => num % 2 !== 0);
+  console.log(filteredArr);
+  return filteredArr;
+
 };
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named notInFirstArray that, given two arrays as input, uses filter to return an array of all the elements in the second array that are not included in the first array.
+Write a function named notInFirstArray that, given two arrays as input,
+uses filter to return an array of all the elements in the second array that are not included in the first array.
 
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  let filteredArr = arr.filter(element => !forbiddenValues.includes(element));
+  console.log(filteredArr);
+  return filteredArr;
+
 };
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
@@ -213,13 +242,13 @@ Run your tests from the console: jest challenges-08.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should add two to every value', () => {
     expect(addTwo([1, 2, 4])).toStrictEqual([3, 4, 6]);
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array containing only numbers', () => {
     expect(typeNum([1, 'bob', 3])).toStrictEqual([1, 3]);
     expect(typeNum([1, 'bob', 3]).length).toStrictEqual(2);
@@ -228,7 +257,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return an array of strings containing the word and', () => {
     expect(containsAnd(['panda', 'ran', 'and'])).toStrictEqual(['panda', 'and']);
     expect(containsAnd(['banana', 'bob', 'xyz'])).toStrictEqual([]);
@@ -237,7 +266,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return an array containing only odd integers', () => {
     expect(oddValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toStrictEqual([1, 3, 5, 7, 9]);
     expect(oddValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).length).toStrictEqual(5);
@@ -246,7 +275,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   const firstNums = [1, 2, 3];
   const secondNums = [1, 2, 3, 4];
 
