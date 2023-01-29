@@ -1,5 +1,7 @@
 'use strict';
 
+const { resourceLimits } = require("worker_threads");
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -26,17 +28,26 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
+  return starWarsArr.sort((a, b) => b.height - a.height);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the value at the index.
+Write a function named removeThree that takes an index and an array.
+ The function should removes three items in the array starting with the value at the index.
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => {
   // Solution code here...
+  arr.splice(idx, 3);
+  console.log('splice(idx,3)', arr);
+  return arr;
+
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -46,7 +57,11 @@ Write a function named joinArray that takes an array and joins all of the elemen
 
 const joinArray = (arr) => {
   // Solution code here...
+  return arr.join(' ');
+
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -63,6 +78,9 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
+  for (let i = 0; i <= str.length; i++) {
+    result.push(str.slice(i));
+  }
   // Solution code here...
   return result;
 };
@@ -77,6 +95,9 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+  return arr.split('');
+
+
 };
 
 
@@ -135,8 +156,64 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  for (let i = 0; i < recipe.length; i++) {
+    let food = recipe[i];
+    let index = food.indexOf(' ');
+    food = food.slice(index +1);
+    // console.log('food:', food);
+    index = food.indexOf(' ');
+    food = food.slice(index +1);
+    result.push(food);
+
+  }
+
   return result;
 };
+
+// const listFoods = (recipe) => {
+//   let result = [];
+//   recipe.ingredients.forEach(ingredient => {
+//     while (ingredient.indexOf(' ') !== -1) {
+//       let index = ingredient.indexOf(' ');
+//       ingredient = ingredient.slice(index + 1);
+//       result.push(ingredient);
+//     }
+//   });
+//   return result;
+// };
+
+// const listFoods = (recipe) => {
+//   let result = [];
+//   recipe.ingredients.forEach(ingredient => {
+//     let food = ingredient.split(' ').slice( +1)[0];
+//     result.push(food);
+//   });
+//   return result;
+// };
+
+
+// const listFoods = (recipe) => {
+//   let result = [];
+//   recipe.ingredients.forEach(ingredient => {
+//     let match = ingredient.match(/([a-zA-Z]+)(\s+)([a-zA-Z]+)/);
+//     if (match) {
+//       result.push(match[1]);
+//     }
+//   });
+//   return result;
+// };
+
+// const listFoods = (recipe) => {
+//   let result = [];
+//   recipe.ingredients.forEach(ingredient => {
+//     let index = ingredient.indexOf(' ');
+//     if (index !== -1) {
+//       let foodName = ingredient.slice(0, index);
+//       result.push(foodName);
+//     }
+//   });
+//   return result;
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -255,26 +332,26 @@ Run your tests from the console: jest challenges-05.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should sort the star wars characters by height from tallest to shortest', () => {
     expect(sortStarWarsCharacters(starWarsPeople)[0]['name']).toStrictEqual('Luke Skywalker');
     expect(sortStarWarsCharacters(starWarsPeople)[2]['height']).toStrictEqual('96');
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array with three items removed', () => {
     expect(removeThree(2, [1, 2, 3, 4, 5, 6, 7, 8])).toStrictEqual([1, 2, 6, 7, 8]);
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should join an array', () => {
     expect(joinArray(['hello', '301', 'students'])).toStrictEqual('hello 301 students');
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return a list of shortening words', () => {
     expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
     expect(howMuchPencil('Welcome').length).toStrictEqual(8);
@@ -283,7 +360,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return an array of individual letters', () => {
     expect(wordsToCharList('Gregor')).toStrictEqual(['G', 'r', 'e', 'g', 'o', 'r']);
     expect(wordsToCharList('Gregor').length).toStrictEqual(6);
@@ -292,7 +369,7 @@ xdescribe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return a list of foods', () => {
     expect(listFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
     expect(listFoods(gruffaloCrumble).length).toStrictEqual(11);
