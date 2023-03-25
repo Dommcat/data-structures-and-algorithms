@@ -2,12 +2,11 @@ class LinkedList:
     """
    `Singly Linked List`. Singly Linked Lists contain individual nodes that have a reference to the
 
-   The methods of this `LinkedList` are `insert`, `includes` and `str`. add for test
+   The methods of this `LinkedList` are `insert`, `includes` and `str`.
     """
 
     def __init__(self, head, _next=None):
         self.head = None
-
 
 
     def __str__(self):  # same as to_string
