@@ -1,32 +1,25 @@
-# Data Structure Implementation
----
+# Challenge Title
+401 Code Challenge Class 06: Insert Shift Array
+Author: Dominick Martin
 
-## Node & Linked List
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![linked-list-insertions-whiteboard](/Assets/Lab06.jpg)
 
-*Author: Dominick Martin*
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+time 0(1)
+space 0(1)
 
----
-
-## Feature Description
-
-A Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-A Python implementation of a `Singly Linked List`. Singly Linked Lists contain individual nodes that have a reference to the `Next` node in the list as well as a `Value`. The methods of this `LinkedList` are `insert`, `includes` and `str`.
-
----
-
-## Methods
-
-| Method   | Summary                                                                                 | Big O Time | Big O Space | Example            |
-|:---------|:----------------------------------------------------------------------------------------| :-------------: | :-------------: |:-------------------|
-| Insert   | Adds a new `Node` to the `Linked List`                                                  | O(1) | O(1) | myList.Insert(99)  |
-| Includes | Takes in a value and returns a boolean depending on if the value is in the `LinkedList` | O(n) | O(1) | myList.Includes(99) |
-| __str__  | Returns all the values in the `Linked List`                                              | O(n) | O(1) | myList.__str__(99) |
-
-## Sources
-ChatGPT, Web3 Schools
+## Sources/Tools used:
+ChatGPT
 
 
 
+[//]: # ()
+[//]: # (## Solution)
+
+[//]: # (<!-- Show how to run your code, and examples of it in action -->)
 
 
 
@@ -57,7 +50,6 @@ ChatGPT, Web3 Schools
 
 [//]: # (*the previous Head is assigned as the new Nodes Next.*)
 
-[//]: # (![Image 1]&#40;https://via.placeholder.com/750x500&#41;)
 
 [//]: # (### Includes Method)
 

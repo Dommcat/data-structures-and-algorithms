@@ -58,7 +58,37 @@ class Node:  # node in a singly-linked list
             def __str__(self):
                 return f"Node({self.head}, {self.next})"
 
+   def insert_before(self, value, new_value):
+        if not self.head:
+            raise ValueError("List is empty")
 
+        if self.head.value == value:
+            new_node = Node(new_value, self.head)
+            self.head = new_node
+            return
+
+        current = self.head
+        while current.next and current.next.value != value:
+            current = current.next
+
+        if not current.next:
+            raise ValueError(f"Value {value} not found in the list")
+
+        new_node = Node(new_value, current.next)
+        current.next = new_node
+
+    def insert_after(self, value, new_value):
+        if not self.head:
+            raise ValueError("List is empty")
+
+        current = self.head
+        while current and current.value != value:
+            current = current.next
+
+        if not current:
+            raise ValueError(f"Value {value} not found in the list")
+
+        new_node = Node
 
 
 
