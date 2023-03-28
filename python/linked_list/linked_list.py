@@ -1,13 +1,7 @@
 class LinkedList:
-    """
-   `Singly Linked List`. Singly Linked Lists contain individual nodes that have a reference to the
-
-   The methods of this `LinkedList` are `insert`, `includes` and `str`.
-    """
 
     def __init__(self, head, _next=None):
         self.head = None
-
 
     def __str__(self):  # same as to_string
         result = [str]
@@ -48,7 +42,6 @@ class LinkedList:
             current.value += 1
             current = current._next
         return linked_list_string + 'NULL'
-
 class Node:  # node in a singly-linked list
 
             def __init__(self, head, next=None):
@@ -89,10 +82,6 @@ class Node:  # node in a singly-linked list
             raise ValueError(f"Value {value} not found in the list")
 
         new_node = Node
-
-
-
-
 
 
         #
