@@ -1,10 +1,10 @@
 # Challenge Title
-401 Code Challenge Class 06: Insert Shift Array
+401 Code Challenge Class 07: Extending an Implementation
 Author: Dominick Martin
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![linked-list-insertions-whiteboard](/Assets/Lab06.jpg)
+![linked-list-insertions-whiteboard](/linked_list/whiteboard7.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->

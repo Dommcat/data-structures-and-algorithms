@@ -74,3 +74,16 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run every possible test** - `pytest`
 - **Run filtered tests** - `pytest -k some_filter_text`
 - **Run in watch mode** - `ptw` or `pytest-watch`
+
+## Python Table of Contents
+
+- [Code Challenge 01](linked_list)
+- [Code Challenge 02](linked_list)
+- [Code Challenge 03](/python/linked_list/README.md)
+- [Code Challenge 04](/python/linked_list/README.md)
+- [Code Challenge 05](/python/linked_list/README.md)
+- [Code Challenge 06](/linked_list/README.md)
+- [Code Challenge 07](\\wsl.localhost\Ubuntu-20.04\home\dmartin\Codefellows\401-Projects\data-structures-and-algorithms\python\linked_list\README.md)
+- [Code Challenge 08](linked_list)
+- [Code Challenge 09](linked_list)
+
