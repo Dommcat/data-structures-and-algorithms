@@ -1,14 +1,14 @@
 # Challenge Title
-401 Code Challenge Class 07: Extending an Implementation
+401 Code Challenge Class 08: Zip two linked lists
 Author: Dominick Martin
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![linked-list-insertions-whiteboard](/linked_list/whiteboard7.jpg)
+[whiteboard](/linked_list/WhiteBoardChallenge8.png/)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-time 0(1)
+time 0(n)
 space 0(1)
 
 ## Sources/Tools used:
@@ -18,18 +18,7 @@ ChatGPT
 
 [//]: # ()
 [//]: # (## Solution)
-
 [//]: # (<!-- Show how to run your code, and examples of it in action -->)
-
-
-
-
-
-
-
-
-
-
 
 [//]: # ()
 [//]: # (---)
