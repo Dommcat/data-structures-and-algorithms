@@ -83,7 +83,8 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 04](/python/linked_list/README.md)
 - [Code Challenge 05](/python/linked_list/README.md)
 - [Code Challenge 06](/linked_list/README.md)
-- [Code Challenge 07](\\wsl.localhost\Ubuntu-20.04\home\dmartin\Codefellows\401-Projects\data-structures-and-algorithms\python\linked_list\README.md)
+- [Code Challenge 07]()
 - [Code Challenge 08](linked_list)
 - [Code Challenge 09](linked_list)
+- [Code Challenge 10](data_structures/Stack_QueueREADME.md)
 

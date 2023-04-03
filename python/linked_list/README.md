@@ -6,10 +6,15 @@ Author: Dominick Martin
 <!-- Embedded whiteboard image -->
 [whiteboard](/linked_list/WhiteBoardChallenge8.png/)
 
+## Code
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 time 0(n)
 space 0(1)
+
+
+
 
 ## Sources/Tools used:
 ChatGPT
