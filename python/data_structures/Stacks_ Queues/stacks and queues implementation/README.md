@@ -1,5 +1,5 @@
 
-# Python 401: Challenge Class 10
+# Python 401: Code Challenge Class 10
 Stacks & Queues Implementation
 
 ## Whiteboard Process
