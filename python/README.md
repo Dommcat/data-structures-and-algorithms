@@ -1,4 +1,4 @@
-# Data Structures and Algorithms
+#  401 Data Structures and Algorithms
 
 ## Language: `Python`
 
@@ -77,14 +77,15 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
 ## Python Table of Contents
 
-- [Code Challenge 01](linked_list)
-- [Code Challenge 02](linked_list)
-- [Code Challenge 03](/python/linked_list/README.md)
-- [Code Challenge 04](/python/linked_list/README.md)
-- [Code Challenge 05](/python/linked_list/README.md)
-- [Code Challenge 06](/linked_list/README.md)
+- [Code Challenge 01]()
+- [Code Challenge 02]()
+- [Code Challenge 03]()
+- [Code Challenge 04]()
+- [Code Challenge 05]()
+- [Code Challenge 06]()
 - [Code Challenge 07]()
-- [Code Challenge 08](linked_list)
-- [Code Challenge 09](linked_list)
-- [Code Challenge 10](data_structures/Stack_QueueREADME.md)
-
+- [Code Challenge 08]()
+- [Code Challenge 09]()
+- [Code Challenge 10: Stack and Queue Implementation](data_structures/Stacks_%20Queues/stacks%20and%20queues%20implementation/README.md)
+- [Code Challenge 11: Stack Queue Pseudo](data_structures/Stack_QueueREADME.md)
+-
