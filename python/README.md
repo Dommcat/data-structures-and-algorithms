@@ -88,3 +88,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 09]()
 - [Code Challenge 10: Stack and Queue Implementation](data_structures/Stacks_%20Queues/stacks%20and%20queues%20implementation/README.md)
 - [Code Challenge 11: Stack Queue Pseudo](data_structures/Stack_QueueREADME.md)
+- [Code Challenge 12: Animal Shelter](data_structures/python/code_challenges/stack-queue-animal-shelter/README.md)
