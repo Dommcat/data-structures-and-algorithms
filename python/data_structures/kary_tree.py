@@ -1,4 +1,4 @@
-from data_structures.queue import Queue
+from data_structures.Stacks_Queues.stack_queue.queue import Queue
 
 
 class KaryTree:

@@ -1,5 +1,5 @@
 import pytest
-from data_structures.binary_search_tree import BinarySearchTree
+from data_structures.binary_tree.binary_search_tree import BinarySearchTree
 
 
 def test_exists():

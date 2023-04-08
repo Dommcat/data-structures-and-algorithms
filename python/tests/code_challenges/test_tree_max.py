@@ -1,5 +1,5 @@
 import pytest
-from data_structures.binary_tree import BinaryTree, Node
+from data_structures.binary_tree.trees import BinaryTree, Node
 
 
 @pytest.mark.skip("TODO")
