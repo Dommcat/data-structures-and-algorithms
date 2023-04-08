@@ -1,7 +1,7 @@
 import pytest
 from code_challenges.tree_intersection import tree_intersection
-from data_structures.binary_tree import BinaryTree, Node
-from data_structures.queue import Queue
+from data_structures.binary_tree.trees import BinaryTree, Node
+from data_structures.Stacks_Queues.stack_queue.queue import Queue
 
 
 def test_exists():
