@@ -34,10 +34,7 @@ class Node:
 class BinaryTree:
         #Create a Binary Search Tree class: This class should be a sub-class (or your languages equivalent) of the Binary Tree Class, with the following additional methods:
     def __init__(self, root=None):
-        # initialization here
-        self.root
-
-
+        self.root = root
 
         #Traversal Method
     def pre_order(self, values =[]): # expected = ["a", "b", "d", "e", "c", "f", "g"]
@@ -56,8 +53,64 @@ class BinaryTree:
         return values
 
 
+    def in_order(self, values =[]):# expected = ["d", "b", "e", "a", "f", "c", "g"]
+            # left >> root >> right
+        def walk(input_node, value_list):
+            if not input_node:
+                return
+           # Do something with root.left
+            walk(input_node.left, value_list)
+            # Do something with the root
+            value_list.append(input_node.value)
+            # Do something with root.right
+            walk(input_node.right, value_list)
 
-    # assert actual == expected
+        walk(self.root, values)
+        return values
+
+
+    def post_order(self, values = []):# expected = ["d", "e", "b", "f", "g", "c", "a"]
+        # left >> right >> root
+        def walk(input_node, value_list):
+            if not input_node:
+                return
+            # Do something with root.left
+            walk(input_node.left, value_list)
+            # Do something with root.right
+            walk(input_node.right, value_list)
+            # Do something with the root
+            value_list.append(input_node.value)
+
+        walk(self.root, values)
+        return values
+
+
+
+'''
+Create a Binary Search Tree class: This class should be a sub-class (or your languages equivalent) of the Binary Tree Class, with the following additional methods:
+
+Add
+Arguments: value
+Return: nothing
+
+Adds a new node with that value in the correct location in the binary search tree.
+Contains
+Argument: value
+
+Returns: boolean indicating whether or not the value is in the tree at least once.
+
+'''
+
+# class BinarySearchTree(BinaryTree):
+#   def __init__(self):
+#         self.root = None
+
+#     def add(self, value):
+#         pass
+
+#     def contains(self):
+#         pass
+
 
 
 
