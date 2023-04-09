@@ -6,7 +6,6 @@ Binary Search Trees
 No White Board for this challenge
 
 [//]: # (## Approach & Efficiency)
-
 [//]: # (<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->)
 
 ## Solution Code
