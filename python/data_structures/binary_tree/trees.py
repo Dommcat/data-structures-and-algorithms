@@ -1,6 +1,5 @@
 
 
-
 """
 Features
 Binary Tree: Create a Binary Tree class
@@ -21,15 +20,12 @@ Argument: value
 Returns: boolean indicating whether or not the value is in the tree at least once.
 """
 
-
-
 class Node:
        # Node: Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
     def  __init__(self, value, left=None, right=None):
         self.value = value
         self.left = left
         self.right = right
-
 
 class BinaryTree:
         #Create a Binary Search Tree class: This class should be a sub-class (or your languages equivalent) of the Binary Tree Class, with the following additional methods:
