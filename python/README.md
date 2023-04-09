@@ -91,6 +91,6 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 12: Animal Shelter](/python/data_structures/python/code_challenges/stack-queue-animal-shelter/README.md)
 - [Code Challenge 13: Brackets](/python/code_challenges/stack_queue_brackets/README.md)
 - [Code Challenge 14: ](/python/data_structures/python/code_challenges/stack-queue-animal-shelter/README.md)
-- [Code Challenge 15: Brackets](data_structures/binary_tree/README.md)
+- [Code Challenge 15: BST ](data_structures/binary_tree/README.md)
 
 
