@@ -28,6 +28,7 @@ class Queue:
             self.rear.next_node = new_node
             self.rear = new_node
 
+
     def dequeue(self):
         if self.is_empty():
             raise InvalidOperationError("Queue is empty")
@@ -35,7 +36,8 @@ class Queue:
         self.front = self.front.next_node
         if self.front is None:
             self.rear = None
-            return value
+        return value  # This line should be outside the conditional block.
+
 
     def peek(self):
         if self.is_empty():
