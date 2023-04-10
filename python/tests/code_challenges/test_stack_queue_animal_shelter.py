@@ -3,7 +3,6 @@ import pytest
 from code_challenges.animal_shelter.animal import AnimalShelter, Animal
 
 
-
 @pytest.mark.skip("TODO")
 def test_single_cat():
     shelter = AnimalShelter()
