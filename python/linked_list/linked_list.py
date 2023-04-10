@@ -1,112 +1,46 @@
+
+class Node: # node in a singly-linked list
+    """
+    A node in a singly-linked list.
+    Attributes:
+        value (any): The value stored in the node.
+        next (Node): The next node in the list.
+    """
+    def __init__(self, value, next=None):
+        self.value = value
+        self.next = next
+
+
+
 class LinkedList:
-
-    def __init__(self, head, _next=None):
-        self.head = None
-
-    def __str__(self):  # same as to_string
-        result = [str]
-        current = self.head
-        while current is not None:
-            result.append(str(current))
-            current = current._next
-        return " -> ".join(result)
-
-#the traverse list +  3 required methods
-
-    def traverse_list(self):
-        current = self.head
-        while current is not None:
-            current.value += 1
-            current = current._next
-        return "There's something in the way she moves me"
-
-    def insert(self, head):
+    """
+    A singly-linked list.
+    Attributes:
+        head (Node): The first node in the linked list.
+    """
+    def __init__(self, head=None):
         self.head = head
-        current = head
-        while current is not None:
-            current.value += 1
-            current = current._next
-        return "This is the insert method"
 
-    def includes(self, head):
-        current = self.head
-        while current is not None:
-            current.value += 1
-            current = current._next
-        return "This is the includes method"
-
-    def to_string(self, head):
-        current = self.head
-        linked_list_string = ''
-        while current is not None:
-            current.value += 1
-            current = current._next
-        return linked_list_string + 'NULL'
-
-
-class Node:  # node in a singly-linked list
-
-    def __init__(self, head, next=None):
-        self.head = head
-        self._next = next
+    def insert(self, value):
+        new_node = Node(value, self.head)
+        self.head = new_node
 
     def __str__(self):
-        return f"Node({self.head}, {self.next})"
-
-    def insert_before(self, value, new_value):
-        if not self.head:
-            raise ValueError("List is empty")
-
-        if self.head.value == value:
-            new_node = Node(new_value, self.head)
-            self.head = new_node
-            return
-
+        result = []
         current = self.head
-        while current.next and current.next.value != value:
+        while current:
+            result.append(f"{{ {current.value} }} ->")
             current = current.next
+        result.append("NULL")
+        return " ".join(result) #"{ a } -> { b } -> { c } -> NULL"
 
-        if not current.next:
-            raise ValueError(f"Value {value} not found in the list")
-
-        new_node = Node(new_value, current.next)
-        current.next = new_node
-
-    def insert_after(self, value, new_value):
-        if not self.head:
-            raise ValueError("List is empty")
-
+    def includes(self, value):
         current = self.head
-        while current and current.value != value:
+        while current:
+            if current.value == value:
+                return True
             current = current.next
-
-        if not current:
-            raise ValueError(f"Value {value} not found in the list")
-
-        new_node = Node
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def kthFromEnd(self, k):
-        if self.head is None:
-            raise Exception("The linked list is empty.")
-
-        # Initialize two pointers, one pointing to the head and the other k nodes ahead.
-        first = self.head
-        second = self.head
-        for i in range(k):
-            if second is None:
-                raise Exception("k is larger than the length of the linked list.")
-            second = second.next
-
-        # Move both pointers until the second pointer reaches the end of the linked list.
-        while second is not None:
-            first = first.next
-            second = second.next
-
-            return first.value
+        return False
 
 
 
@@ -114,6 +48,20 @@ class LinkedList:
 
 
 
+
+
+
+
+
+
+# #the traverse list +  3 required methods
+
+#     def traverse_list(self):
+#         current = self.head
+#         while current is not None:
+#             current.value += 1
+#             current = current._next
+#         return "There's something in the way she moves me"
 
 
 
