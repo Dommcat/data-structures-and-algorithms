@@ -28,7 +28,6 @@ class Queue:
             self.rear.next_node = new_node
             self.rear = new_node
 
-
     def dequeue(self):
         if self.is_empty():
             raise InvalidOperationError("Queue is empty")
