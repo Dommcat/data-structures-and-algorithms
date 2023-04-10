@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7b424a4d4a6cefe8e8b33d9595c9fc829260937c
 """
 Challenge Type: Code Challenge / Algorithm
 
