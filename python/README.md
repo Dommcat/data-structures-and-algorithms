@@ -95,5 +95,5 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 13: Brackets](/python/code_challenges/stack_queue_brackets/README.md)
 - [Code Challenge 14: ]()
 - [Code Challenge 15: Binary Trees](data_structures/binary_tree/README.md)
-
+- [Code Challenge 16: Binary Tree Max Value ](data_structures/binary_tree/tree_max/README.md)
 
