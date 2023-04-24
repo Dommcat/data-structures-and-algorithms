@@ -111,11 +111,3 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
 
 
-
-
-
-
-
-
-
-python/sorting_insertion/README.md
