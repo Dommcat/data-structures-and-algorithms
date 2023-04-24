@@ -95,5 +95,19 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 13: Brackets](/python/code_challenges/stack_queue_brackets/README.md)
 - [Code Challenge 14: ]()
 - [Code Challenge 15: Binary Trees](data_structures/binary_tree/README.md)
-- [Code Challenge 16: Binary Tree Max Value ](data_structures/binary_tree/tree_max/README.md)
+- [Code Challenge 16]()
+- [Code Challenge 17]()
+- [Code Challenge 18]()
+- [Code Challenge 19]()
+- [Code Challenge 20]()
+- [Code Challenge 21]()
+- [Code Challenge 22]()
+- [Code Challenge 23]()
+- [Code Challenge 24]()
+- [Code Challenge 25]()
+- [Code Challenge 26](/python/Insertion_sort/README.md)
+- [Code Challenge 27]()
+- [Code Challenge 28]()
+
+
 
