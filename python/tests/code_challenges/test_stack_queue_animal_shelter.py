@@ -1,5 +1,7 @@
 import pytest
 # from code_challenges.stack_queue_animal_shelter.stack_queue_animal_shelter import AnimalShelter, Dog, Cat
+
+from code_challenges.animal_shelter.animal import AnimalShelter
 from code_challenges.animal_shelter.animal import AnimalShelter, Animal
 
 
