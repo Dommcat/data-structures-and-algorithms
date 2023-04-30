@@ -108,14 +108,5 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 26](/python/Insertion_sort/README.md)
 - [Code Challenge 27]()
 - [Code Challenge 28]()
-
-
-
-
-
-
-
-
-
-
-python/sorting_insertion/README.md
+- [Code Challenge 29]()
+- [Code Challenge 30](/python/data_structures/hashtable/README.md)
