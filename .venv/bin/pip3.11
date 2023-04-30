@@ -1,4 +1,4 @@
-#!/home/dmartin/Codefellows/401-Projects/data-structures-and-algorithms/.venv/bin/python3.11
+#!/home/dmartin/Codefellows/401-Projects/data-structures-and-algorithms/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
