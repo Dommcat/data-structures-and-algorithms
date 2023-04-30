@@ -1,10 +1,8 @@
 from data_structures.invalid_operation_error import InvalidOperationError
 
-
 #Import invalid operation error
 #pop & peek invoke the invalid operation error with the correct message
 #relative imports and absolute syntax (what)
-
 
 """
 A Stack class implementing a last-in, first-out (LIFO) data structure using a LL as the underlying storage mechanism.
@@ -18,13 +16,11 @@ A Stack class implementing a last-in, first-out (LIFO) data structure using a LL
     -------
 """
 
-
 class Node:
 
     def __init__(self, value=None, next_node=None):
         self.value = value
         self.next_node = next_node
-
 
 class Stack:
     def __init__(self):
