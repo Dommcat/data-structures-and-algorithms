@@ -110,3 +110,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 28]()
 - [Code Challenge 29]()
 - [Code Challenge 30](/python/data_structures/hashtable/README.md)
+- [Code Challenge 31](/python/code_challenges/hashmap_repeated_word/README.md)
