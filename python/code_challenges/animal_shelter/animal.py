@@ -111,19 +111,19 @@ class Queue:
 
 
 
-if __name__=='__main__':
+# if __name__=='__main__':
 
-    dog1 = Animal("dog", "dog1")
-    cat1 = Animal("cat", "cat1")
-    cat2 = Animal("cat", "cat2")
-    cat3 = Animal("cat", "cat3")
+#     dog1 = Animal("dog", "dog1")
+#     cat1 = Animal("cat", "cat1")
+#     cat2 = Animal("cat", "cat2")
+#     cat3 = Animal("cat", "cat3")
 
-    shelter = AnimalShelter()
+#     shelter = AnimalShelter()
 
-    # Enqueue
+#     # Enqueue
 
-    shelter.enqueue(dog1)
-    shelter.enqueue(cat1)
-    shelter.enqueue(cat2)
+#     shelter.enqueue(dog1)
+#     shelter.enqueue(cat1)
+#     shelter.enqueue(cat2)
 
-    print(shelter.dog_queue.front.value)
+#     print(shelter.dog_queue.front.value)
