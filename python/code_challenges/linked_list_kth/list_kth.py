@@ -129,7 +129,12 @@ class LinkedList:
                 current.next = new_node
                 return
             current = current.next
-        raise ValueError(f"Value not found: {value}") # Raises a ValueError if the specified value is not found in the list.
+        raise TargetError(f"Value not found: {value}") # Raises a ValueError if the specified value is not found in the list.
+
+        # raise TargetError("Value not found")
+
+
+
 
 
     def add(self, value):
@@ -164,6 +169,38 @@ class LinkedList:
         return current.value
 
 
+    def kth_from_end(self, k):
+        if k < 0:
+            raise TargetError("Index out of range", k)
+        node = self.head
+        count = 0
+        while node:
+            node = node.next
+            count += 1
+        if k >= count:
+            raise TargetError("Index out of range", k)
+        node = self.head
+        for i in range(count - k - 1):
+            node = node.next
+        return node.value
+
+
+
+
+
+
+
+
+class TargetError(Exception):
+    def __init__(self, message, target):
+        super().__init__(message)
+        self.target = target
+
+try:
+    raise TargetError("Something went wrong", "target")
+except TargetError as e:
+    print(e)
+    print(e.target)
 
 
 
