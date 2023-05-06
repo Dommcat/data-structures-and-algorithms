@@ -1,8 +1,8 @@
 import pytest
-from data_structures.template_linked_list import LinkedList, TargetError
+from code_challenges.linked_list_kth.list_kth import LinkedList, TargetError
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_kth_from_end_zero():
     linked_list = LinkedList()
     values = ["apples", "bananas", "cucumbers"]
