@@ -1,4 +1,24 @@
 
+"""
+Feature Tasks
+Write the following methods for the Linked List class:
+
+append
+arguments: new value
+adds a new node with the given value to the end of the list
+
+
+insert before
+arguments: value, new value
+adds a new node with the given new value immediately before the first node that has the value specified
+
+
+insert after
+arguments: value, new value
+adds a new node with the given new value immediately after the first node that has the value specified
+
+"""
+
 class Node: # node in a singly-linked list
     """
     A node in a singly-linked list.
@@ -9,7 +29,6 @@ class Node: # node in a singly-linked list
     def __init__(self, value, next=None):
         self.value = value
         self.next = next
-
 
 
 class LinkedList:
