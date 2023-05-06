@@ -11,6 +11,10 @@ Return the node’s value that is k places from the tail of the linked list.
 You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 
+
+[WhiteBoard](/python/Assets/whiteboard7.jpg)
+
+
 ## Solution Code:
 <!-- Show how to run your code, and examples of it in action -->
 
