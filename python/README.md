@@ -110,4 +110,10 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 28]()
 - [Code Challenge 29]()
 - [Code Challenge 30](/python/data_structures/hashtable/README.md)
+- [Code Challenge 31](/python/code_challenges/hashmap_repeated_word/README.md)
+- [Code Challenge 32]()
+- [Code Challenge 33]()
+- [Code Challenge 34](/python/data_structures/hashtable/README.md)
+- [Code Challenge 35](/python/data_structures/Stacks_Queues/README.md)
 - [Code Challenge 16: Binary Tree Max Value ](data_structures/binary_tree/tree_max/README.md)
+
