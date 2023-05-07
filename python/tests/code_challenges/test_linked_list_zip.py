@@ -1,13 +1,16 @@
 import pytest
-from code_challenges.linked_list_zip import zip_lists
-from data_structures.template_linked_list import LinkedList
+# from code_challenges.linked_list_zip_folder.linked_list_zip import LinkedList, zip_lists
+from linked_list.linked_list_template import LinkedList
+from code_challenges.linked_list_zip_folder.linked_list_zip import zip_lists
+
+# from data_structures.linked_list_insertions.insertions import LinkedList
 
 
 def test_exists():
     assert zip_lists
 
 
-@pytest.mark.skip("TODO")
+#1 @pytest.mark.skip("TODO")
 def test_even_length():
     list_a = LinkedList()
     for value in reversed([1, 2, 3]):
@@ -25,7 +28,7 @@ def test_even_length():
     assert str(actual) == str(expected)
 
 
-@pytest.mark.skip("TODO")
+#2 @pytest.mark.skip("TODO")
 def test_a_shorter():
     list_a = LinkedList()
     for value in reversed([1, 2]):
@@ -43,7 +46,7 @@ def test_a_shorter():
     assert str(actual) == str(expected)
 
 
-@pytest.mark.skip("TODO")
+#3 @pytest.mark.skip("TODO")
 def test_b_shorter():
     list_a = LinkedList()
     for value in reversed([1, 2, 3]):
@@ -61,7 +64,7 @@ def test_b_shorter():
     assert str(actual) == str(expected)
 
 
-@pytest.mark.skip("TODO")
+#4 @pytest.mark.skip("TODO")
 def test_a_empty():
     list_a = LinkedList()
     list_b = LinkedList()
@@ -75,7 +78,7 @@ def test_a_empty():
     assert str(actual) == str(expected)
 
 
-@pytest.mark.skip("TODO")
+#5 @pytest.mark.skip("TODO")
 def test_b_empty():
     list_a = LinkedList()
     for value in reversed([1, 2, 3]):
