@@ -87,7 +87,7 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 05: Link Lists](linked_list/README.md)
 - [Code Challenge 06: link-list-insertions](/python/data_structures/linked_list_insertions/README.md)
 - [Code Challenge 07: k-th value from the end of a linked list](/python/code_challenges/linked_list_kth/README.md)
-- [Code Challenge 08]()
+- [Code Challenge 08: Linked List Zip](/python/code_challenges/linked_list_zip_folder/README.md)
 - [Code Challenge 09]()
 - [Code Challenge 10: Stack and Queue Implementation](data_structures/Stacks_Queues/stack_queue/README.md)
 - [Code Challenge 11: Stack Queue Pseudo](data_structures/Stack_QueueREADME.md)
