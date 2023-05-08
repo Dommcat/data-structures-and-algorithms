@@ -1,4 +1,22 @@
-from .invalid_op_error import InvalidOperationError
+from stack_queue_brackets.invalid_op_error import InvalidOperationError
+
+# class Stack:
+#     def __init__(self):
+#         self.items = []
+
+#     def push(self, value):
+#         self.items.append(value)
+
+#     def pop(self):
+#         return self.items.pop()
+
+#     def peek(self):
+#         return self.items[-1]
+
+#     def is_empty(self):
+#         return len(self.items) == 0
+
+
 
 
 class Node:
