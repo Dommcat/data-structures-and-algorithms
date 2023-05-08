@@ -90,7 +90,7 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 08: Linked List Zip](/python/code_challenges/linked_list_zip_folder/README.md)
 - [Code Challenge 09]()
 - [Code Challenge 10: Stack and Queue Implementation](data_structures/Stacks_Queues/stack_queue/README.md)
-- [Code Challenge 11: Stack Queue Pseudo](data_structures/Stack_QueueREADME.md)
+- [Code Challenge 11: Stack Queue Pseudo](/python/code_challenges/stack_queue_pseudo_file/README.md)
 - [Code Challenge 12: Animal Shelter](/python/data_structures/python/code_challenges/stack-queue-animal-shelter/README.md)
 - [Code Challenge 13: Brackets](/python/code_challenges/stack_queue_brackets/README.md)
 - [Code Challenge 14: ]()
