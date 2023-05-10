@@ -96,7 +96,7 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Code Challenge 14: ]()
 - [Code Challenge 15: Binary Trees](data_structures/binary_tree/README.md)
 - [Code Challenge 16]()
-- [Code Challenge 17]()
+- [Code Challenge 17: Breadth First Search](/python/code_challenges/tree_breadth_first_file/README.md)
 - [Code Challenge 18]()
 - [Code Challenge 19]()
 - [Code Challenge 20]()
