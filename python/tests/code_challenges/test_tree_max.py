@@ -1,8 +1,11 @@
 import pytest
+
 from data_structures.class_templates_file.class_temps import BinaryTree, Node
 
+from python.data_structures.binary_tree.tree_max.tree_max import BinaryTree, Node
 
-@pytest.mark.skip("TODO")
+
+# @pytest.mark.skip("TODO")
 def test_max_val():
     tree = BinaryTree()
     tree.root = Node(10)
